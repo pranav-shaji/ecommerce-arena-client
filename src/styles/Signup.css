@@ -1,0 +1,29 @@
+.signup-container {
+    border: 1px solid;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px;
+
+}
+
+.signup-form {
+    border: 1px solid;
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.signup-form>div{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.signup-form>h1{
+   text-align: center;
+}

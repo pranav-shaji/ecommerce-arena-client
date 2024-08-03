@@ -1,0 +1,14 @@
+.review-container {
+    margin-top: 0;
+}
+
+.review-container>div {
+    border: 1px solid;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.review-images {
+    display: flex;
+    gap: 10px;
+}
