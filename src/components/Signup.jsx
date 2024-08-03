@@ -17,7 +17,8 @@ function Signup() {
     let [msg, setMsg] = useState('')
 
 
-    let sendData = () => {
+    let sendData = (e) => {
+        e.preventDefault()
         console.log(userData);
 
         axios.post(`${BASE_URL}/user/signup`, userData,).then((res) => {
@@ -25,9 +26,9 @@ function Signup() {
             setMsg(res.data.message)
             if (res.status == 200) {
                 setColor('green')
-                // navigate('/')
                 localStorage.setItem('laptop_arena', JSON.stringify(res.data.token))
                 dispatch(setUser(res.data.userData))
+                navigate('/')
             } else {
                 setColor('red')
             }
